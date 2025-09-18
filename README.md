@@ -6,11 +6,12 @@ Objetivo: Resumir o que são Auto Scaling, Load Balancer e as regras de Scaling 
 
 É um serviço da AWS que ajusta automaticamente a quantidade de instâncias EC2 de acordo com a demanda, e tem como objetivo garantir performance (quando a carga aumenta) e reduzir custos (quando a carga cai).
 
-O que aprendemos:
+Passo-a-passo:
 
-Ele trabalha junto com CloudWatch (para métricas e alarmes).
+1.1) Criar um Launch Template (modelo da instância)
 
-Pode adicionar (scale out/up) ou remover instâncias (scale in/down).
+1.2) AMI: escolha a imagem (ex: Amazon Linux 2, Ubuntu).
+<img width="833" height="266" alt="image" src="https://github.com/user-attachments/assets/1424577d-72b9-45ca-9867-1af415db14a5" />
 
-Garante alta disponibilidade e elasticidade.
+
 
