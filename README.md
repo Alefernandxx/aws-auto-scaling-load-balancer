@@ -16,9 +16,8 @@ Passo-a-passo:
 1.3) Instance type: ex t3.micro
 <img width="1234" height="215" alt="image" src="https://github.com/user-attachments/assets/d0a21e87-c756-475f-8b31-80621427e6f5" />
 
-
 1.4) ⚠️IMPORTANTE⚠️ Security groups: associe um SG que permita tráfego necessário (HTTP/HTTPS).
-<img width="357" height="151" alt="image" src="https://github.com/user-attachments/assets/5f28506c-4882-47fe-bee6-b43057b0c2ba" />
+
 
 
 
