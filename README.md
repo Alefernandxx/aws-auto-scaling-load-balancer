@@ -18,6 +18,10 @@ Passo-a-passo:
 
 1.4) ⚠️IMPORTANTE⚠️ Security groups: associe um SG que permita tráfego necessário (HTTP/HTTPS).
 
+1.5) User data: cole o script de bootstrap (instala dependências, registra app, configura health endpoint).
+<img width="796" height="325" alt="image" src="https://github.com/user-attachments/assets/4e83679e-b41f-4607-a9e1-f0741744aade" />
+
+
 
 
 
