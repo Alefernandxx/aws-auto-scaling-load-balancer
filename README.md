@@ -31,6 +31,41 @@ Passo-a-passo:
 
 🖥️ Load Balancer:
 
+É um serviço que distribui automaticamente o tráfego entre várias instâncias EC2, e tem como objetivo evitar sobrecarga em uma única instância, aumentar tolerância a falhas.
+
+Passo-a-passo:
+
+2) Criar um Load Balancer no console.
+
+2.1) Definir Listeners (ex: HTTP 80, HTTPS 443).
+
+2.2) Criar Target Groups (instâncias EC2, containers, etc).
+
+2.3) Associar ao Auto Scaling Group.
+
+🖥️ Regras de Scaling (Up e Down):
+
+Scaling Up/Out: Adicionar instâncias quando a demanda aumenta.
+
+Scaling Down/In: Remover instâncias quando a demanda diminui.
+
+Passo-a-passo:
+
+3) Definir métricas no CloudWatch (ex: CPU > 70% por 5 minutos → scale up).
+
+3.1) Criar uma política de scaling (ex: adicionar 1 instância).
+
+3.2) Definir o oposto para scale down (ex: CPU < 30% por 5 minutos → remover 1 instância).
+
+3.3) Testar a aplicação sob carga para validar as regras.
+
+4) O que aprendi: 
+
+Durante esse projeto, aprendi a criar e configurar um Auto Scaling Group a partir de um Launch Template, garantindo que as instâncias EC2 fossem gerenciadas automaticamente. Também configurei um Load Balancer e associei as instâncias através de um Target Group, entendendo melhor como ele distribui as requisições apenas para aquelas que estão saudáveis.
+
+Outro ponto importante foi a definição das regras de scaling, tanto para aumentar (scaling up) quanto para reduzir (scaling down) a quantidade de instâncias com base em métricas do CloudWatch. Isso mostrou na prática como o ajuste automático ajuda a manter um equilíbrio entre performance e custo.
+
+Por fim, fiz testes de carga para validar se as regras criadas realmente funcionavam, e isso me deu uma visão clara de como esses recursos trabalham juntos para deixar a aplicação mais estável e escalável.
 
 
 
